@@ -7,7 +7,7 @@ Build date: 2010-04-21
 
 ## Overview ##
 
-jQuery plugin that provide fallback support for HTML5 placeholder attributes in browsers that don't yet support it.
+jQuery plugin that provides fallback support for HTML5 placeholder attributes in browsers that don't yet support it.
 
 ## Usage ##
 
