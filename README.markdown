@@ -2,8 +2,8 @@
 
 Copyright (c) 2010 Max Wheeler. Licensed under the [WTFPL](http://sam.zoy.org/wtfpl/)
 
-Version:    1.0.0  
-Build date: 2010-04-21
+Version:    1.0.1  
+Build date: 2010-04-29
 
 ## Overview ##
 
@@ -24,6 +24,10 @@ In browsers that support `placeholder` attributes (Safari, Chrome), nothing will
 Also, it may seem obvious, but you'll need to actually have `placeholder="foo"` attributes on the elements you're targeting else the plugin won't know where to source the place holder text.
 
 ## Changelog ##
+
+1.0.1:
+
+* Minified using YUI compressor instead ofo JSMin
 
 1.0.0:
 

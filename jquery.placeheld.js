@@ -5,6 +5,7 @@
 //
 // Changelog:
 // * v1.0.0 (2010-04-21) Initial Version
+// * v1.0.1 (2010-04-29) Minified using YUI compressor instead ofo JSMin
 
 (function($){
   $.placeHeld = function(el, options){
