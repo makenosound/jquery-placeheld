@@ -15,7 +15,7 @@ Dead simple, just call the `placeHeld()` function on any `<input>` elements you 
 
     $("input[placeholder]").placeHeld();
 
-In browsers that support `placeholder` attributes (Safari, Chrome), nothing will happen. Other browsers will show the contents of the `placeholder` attribute (by populating the `value` attribute) and a "placehold" class will toggle on/off. You can customise the class by passing in a default value in the initialisation:
+In browsers that support `placeholder` attributes (Safari, Chrome), nothing will happen. Other browsers will show the contents of the `placeholder` attribute (by populating the `value` attribute) and a "placeheld" class will toggle on/off. You can customise the class by passing in a default value in the initialisation:
 
     $("input[placeholder]").placeHeld({
       className: "i-dislike-your-naming-conventions"
