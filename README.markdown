@@ -25,6 +25,11 @@ Also, it may seem obvious, but you'll need to actually have `placeholder="foo"` 
 
 ## Changelog ##
 
+1.0.2:
+
+* Removed default text from form submition
+* Moved placeholder support check outside for() loop
+
 1.0.1:
 
 * Minified using YUI compressor instead ofo JSMin
