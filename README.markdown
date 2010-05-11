@@ -2,8 +2,8 @@
 
 Copyright (c) 2010 Max Wheeler. Licensed under the [WTFPL](http://sam.zoy.org/wtfpl/)
 
-Version:    1.0.1  
-Build date: 2010-04-29
+Version:    1.0.2 
+Build date: 2010-05-10
 
 ## Overview ##
 
