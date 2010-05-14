@@ -2,8 +2,8 @@
 
 Copyright (c) 2010 Max Wheeler. Licensed under the [WTFPL](http://sam.zoy.org/wtfpl/)
 
-Version:    1.0.2 
-Build date: 2010-05-10
+Version:    1.0.3 
+Build date: 2010-05-14
 
 ## Overview ##
 
@@ -24,6 +24,10 @@ In browsers that support `placeholder` attributes (Safari, Chrome), nothing will
 Also, it may seem obvious, but you'll need to actually have `placeholder="foo"` attributes on the elements you're targeting else the plugin won't know where to source the place holder text.
 
 ## Changelog ##
+
+1.0.3
+
+* Added check for "placheld" class before clearing default text on form submission
 
 1.0.2 ([jonthornton](http://github.com/jonthornton)):
 

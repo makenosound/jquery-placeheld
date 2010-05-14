@@ -7,6 +7,7 @@
 // * v1.0.0 (2010-04-21) Initial Version
 // * v1.0.1 (2010-04-29) Minified using YUI compressor instead ofo JSMin
 // * v1.0.2 (2010-05-10) Removed default text from form submission; moved placeholder support check outside for() loop
+// * v1.0.3 (2010-05-14) Added check for "placheld" class before clearing default text on form submission
 
 (function($){
   $.placeHeld = function(el, options){
@@ -19,7 +20,7 @@
     base.init = function(){
       base.options = $.extend({},$.placeHeld.defaultOptions, options);
       base.$el.bind('blur', base.holdPlace).bind('focus', base.releasePlace).trigger('blur');
-      base.$el.parents('form').bind('submit', base.releasePlace);
+      base.$el.parents('form').bind('submit', base.clearPlace);
     };
     // Hold with the default value attribute
     base.holdPlace = function() {
@@ -30,6 +31,11 @@
     base.releasePlace = function() {
       var value = base.$el.val();
       if (value == base.placeholderText) base.$el.val('').removeClass(base.options.className);
+    };
+    // Refill with the default value attribute
+    base.clearPlace = function() {
+      var value = base.$el.val();
+      if (value == base.placeholderText && base.$el.hasClass(base.options.className)) base.$el.val('');
     };
     base.init();
   };
